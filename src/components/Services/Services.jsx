@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
-import './ServiceCard.css'
+import './ServiceCard.css';
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function Services(){
     return (
-        <div className="min-h-screen py-20">
-            <h2 className="text-center font-semibold text-4xl mb-12 md:mb-20">Our Services</h2>
+        <div className="min-h-screen pt-2 pb-6">
+            <div className="inline-flex items-center gap-x-5 bg-white text-black px-5 py-1 rounded-md font-semibold mb-10">
+                <Link to="/">Home</Link> <MdKeyboardDoubleArrowRight/> <Link to="/services">Our Services</Link>
+            </div>
+            <h2 className="font-semibold text-4xl mb-12 md:mb-20">Our Services</h2>
             <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-around gap-10">
                 <Link to="/search">
                     <div className="card">

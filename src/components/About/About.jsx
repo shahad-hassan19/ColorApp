@@ -1,9 +1,14 @@
-import AboutImg from '../../assets/img-about.png'
+import { Link } from 'react-router-dom';
+import AboutImg from '../../assets/img-about.png';
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export default function About(){
     return (
-        <div className="min-h-screen py-20">
-            <h1 className="text-center font-semibold text-4xl mb-12">About Us</h1>
+        <div className="min-h-screen pt-2 pb-16">
+            <div className="inline-flex items-center gap-x-5 bg-white text-black px-5 py-1 rounded-md font-semibold mb-10">
+                <Link to="/">Home</Link> <MdKeyboardDoubleArrowRight/> <Link to="/about">About Us</Link>
+            </div>
+            <h1 className="font-semibold text-4xl mb-12">About Us</h1>
             <div className="flex flex-col md:flex-row-reverse items-center">
                 <img className="w-4/5 md:w-2/5" src={AboutImg} />
                 <div>
