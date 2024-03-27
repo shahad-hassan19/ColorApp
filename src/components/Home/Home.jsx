@@ -2,7 +2,7 @@ import Hero from '../../assets/hero.png'
 
 export default function Home() {
     return (
-        <div className="h-full py-10 flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div className="min-h-screen py-10 flex flex-col-reverse lg:flex-row items-center justify-between">
             <div className='w-full lg:w-1/2'>
             <h1 className=" text-5xl font-bold hidden md:block">
                 Welcome to ColorApp

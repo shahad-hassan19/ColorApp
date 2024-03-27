@@ -2,7 +2,7 @@ import AboutImg from '../../assets/img-about.png'
 
 export default function About(){
     return (
-        <div className="h-full py-20">
+        <div className="min-h-screen py-20">
             <h1 className="text-center font-semibold text-4xl mb-12">About Us</h1>
             <div className="flex flex-col md:flex-row-reverse items-center">
                 <img className="w-4/5 md:w-2/5" src={AboutImg} />

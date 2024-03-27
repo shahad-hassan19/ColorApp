@@ -3,7 +3,7 @@ import './ServiceCard.css'
 
 export default function Services(){
     return (
-        <div className="h-full py-20">
+        <div className="min-h-screen py-20">
             <h2 className="text-center font-semibold text-4xl mb-12 md:mb-20">Our Services</h2>
             <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-around gap-10">
                 <Link to="/search">
